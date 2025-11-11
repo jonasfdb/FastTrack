@@ -1,0 +1,29 @@
+{
+  "name": "fasttrack",
+  "version": "0.0.1",
+  "main": "main_fasttrack.mjs",
+  "description": "A Discord bot that tracks time trials in Mario Kart 8 DX.",
+  "scripts": {
+    "start": "tsx orb.ts",
+    "build": "tsc",
+    "deployToServer": "tsx ./helpers/deploy_beta.ts",
+    "deployToBot": "tsx ./helpers/deploy_global.ts"
+  },
+  "author": "jonasfdb",
+  "license": "MPL-2.0",
+  "dependencies": {
+    "@discordjs/formatters": "^0.4.0",
+    "dayjs": "^1.11.11",
+    "discord.js": "^14.15.3",
+    "node-cron": "^3.0.3",
+    "sequelize": "^6.37.3",
+    "sqlite3": "^5.1.7",
+    "tsx": "^4.20.6",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.15",
+    "@types/node-cron": "^3.0.11",
+    "typescript": "^5.8.3"
+  }
+}
